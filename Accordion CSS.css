@@ -1,0 +1,57 @@
+/* =========== ACCORDION ============ */
+.block {
+list-style-type:none!important;
+}
+
+ul li input[type='checkbox'] {
+display:none;
+}
+
+ul li label {
+display:block;
+padding:12px;
+width:300px;
+background:#ebebeb;
+color:##777;
+}
+
+ul li label:hover {
+background:#879b60;
+color:#fff;
+}
+
+ul li input[type='checkbox']:checked ~ .options {
+height:auto;
+display:block;
+min-height:40px;
+max-height:400px;
+}
+
+ul li [type='checkbox']:checked ~ label {
+background:#879b60;
+color:#fff;
+}
+
+.options {
+height:0;
+display:block;
+overflow:hidden;
+}
+
+.product-fold ul {
+padding-left:0!important;
+}
+
+ul.options {
+padding-top:10px;
+}
+
+/* =========== END ACCORDION ========== */
+
+.sbContainer .page-content #slot-main .product-fold ul li:before {
+    content: none;
+}
+
+ul li label {
+	    text-align: center;
+}
