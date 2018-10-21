@@ -1,0 +1,73 @@
+/* =========== ACCORDION ============ */
+.block {
+list-style-type:none!important;
+}
+
+.sbContainer .page-content .options {
+margin:0;
+}
+
+ul li label {
+text-align:center;
+display:block;
+padding:12px;
+width:300px;
+background:#f0ecc5;
+color:#777;
+margin:0 auto;
+transition:all ease .5s;
+}
+
+ul li label:hover {
+background:#879b60;
+color:#fff;
+}
+
+.options {
+height:0;
+display:block;
+overflow:hidden;
+}
+
+ul.options {
+padding-top:10px;
+-webkit-transition:all .7s;
+-moz-transition:all .7s;
+-ms-transition:all .7s;
+-o-transition:all .7s;
+transition:all .7s;
+max-height:0;
+display:block;
+overflow:hidden;
+opacity:1;
+}
+
+.options li {
+padding-right:2em;
+}
+
+.product-fold ul {
+padding-left:0!important;
+}
+
+.sbContainer .page-content #slot-main .product-fold ul li:before {
+content:none;
+}
+
+ul li input[type='checkbox'] {
+display:none;
+}
+
+ul li input[type='checkbox']:checked ~ .options {
+height:auto;
+display:block;
+min-height:40px;
+max-height:1000px;
+}
+
+ul li input[type='checkbox']:checked ~ label {
+background-color:#879b60;
+color:#fff;
+}
+
+/* =========== END ACCORDION ========== */
